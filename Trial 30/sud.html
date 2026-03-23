@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Drop</title>
+    <style>
+        button{
+            display: block;
+            height: 32px;
+            padding: 0px 20px;
+            position: absolute;
+            background-color: #e6e6e6;
+            border-width: 1px;
+            top: 20px;
+            z-index: 1;
+        }
+        div{
+            position: absolute;
+            border: 1px solid;
+            width: 608px;
+            height: 480px;
+            overflow-y: auto;
+        }
+        label, input, p{
+            position: absolute;
+        }
+        h1, h2, h3{
+            position: absolute;
+            border-bottom: 1px solid;
+            width: 560px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="theGame" style="position: absolute; z-index: 0;"></canvas>
+    <canvas id="sprite0" style="position: absolute; z-index: 1;"></canvas>
+    <button id="m1" onclick="showSets()">Settings</button>
+    <button id="m2" onclick="showHelp()">Help</button>
+    <div id="man" style="display: none;">
+        <script src="sud.js"></script>
+        <script src="smenu.js"></script>
+    </div>
+</body>
+</html>
